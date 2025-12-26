@@ -6,7 +6,7 @@ This repository contains the LaTeX source code for my resume. I chose LaTeX to e
 
 ## 📄 Preview
 
-[Click here to view the latest PDF version](lhttps://github.com/Yeshwanth-kr/latex-resume/blob/main/resume.pdf)
+[Click here to view the latest PDF version](https://github.com/Yeshwanth-kr/latex-resume/blob/main/resume.pdf)
 
 ## 🛠 Features
 
