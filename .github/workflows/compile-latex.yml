@@ -1,0 +1,23 @@
+name: Build LaTeX Document
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+          # Change to xelatex or lualatex if your resume uses specific fonts
+          compiler: pdflatex 
+
+      - name: Check in PDF
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add resume.pdf
+          git commit -m "Update compiled PDF [skip ci]" || echo "No changes to commit"
+          git push

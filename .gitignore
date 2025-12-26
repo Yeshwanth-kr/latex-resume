@@ -1,0 +1,41 @@
+## Core LaTeX intermediate files
+*.aux
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.log
+*.out
+*.toc
+*.snm
+*.nav
+*.vrb
+
+## Bibliography files
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+
+## Synctex (used for editor-to-pdf jumping)
+*.synctex.gz
+*.synctex.gz(busy)
+
+## Build directories (if using tools like latexmk)
+_minted*
+build/
+pythontex-files-*/
+
+## Desktop / OS files
+.DS_Store
+Thumbs.db
+
+## The actual PDF (Optional)
+# Uncomment the line below if you ONLY want to store code 
+# and don't want the PDF version tracked in git.
+*.pdf
