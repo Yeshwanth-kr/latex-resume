@@ -38,4 +38,4 @@ Thumbs.db
 ## The actual PDF (Optional)
 # Uncomment the line below if you ONLY want to store code 
 # and don't want the PDF version tracked in git.
-*.pdf
+# *.pdf
