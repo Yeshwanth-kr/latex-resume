@@ -1,5 +1,9 @@
 name: Build LaTeX Document
-on: [push]
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -12,7 +16,7 @@ jobs:
         with:
           root_file: resume.tex
           # Change to xelatex or lualatex if your resume uses specific fonts
-          compiler: pdflatex 
+          compiler: pdflatex
 
       - name: Check in PDF
         run: |
