@@ -13,17 +13,23 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
 
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: resume.tex
-          # Change to xelatex or lualatex if your resume uses specific fonts
-          compiler: pdflatex
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-latex-extra
 
-      - name: Check in PDF
+      - name: Compile LaTeX files
+        run: |
+          cd latex_codes
+          for file in *.tex; do
+            pdflatex "$file"
+          done
+          mv *.pdf ../resume_PDFs/
+
+      - name: Check in PDFs
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add resume.pdf
-          git commit -m "Update compiled PDF [skip ci]" || echo "No changes to commit"
+          git add resume_PDFs/
+          git commit -m "Update compiled PDFs [skip ci]" || echo "No changes to commit"
           git push
