@@ -18,10 +18,10 @@
 
 % --- METADATA ADDITION ---
 \hypersetup{
-    pdftitle={Yeshwanth Krishna - SDE Resume},
+    pdftitle={Yeshwanth Krishna - DevOps Engineer Resume},
     pdfauthor={Yeshwanth Krishna},
-    pdfsubject={Software Development Engineer},
-    pdfkeywords={MERN, Next.js, Distributed Systems, System Design, AI, SDE}
+    pdfsubject={DevOps Engineer / Site Reliability Engineer},
+    pdfkeywords={DevOps, CI/CD, GitHub Actions, Docker, Jenkins, AWS, Trivy, Dependabot, Shell Scripting, Linux, DevSecOps, Containerization, Infrastructure Automation, Vercel, Lighthouse CI}
 }
 
 \pagestyle{fancy}
@@ -108,7 +108,7 @@
 %-----------SUMMARY-----------
 \section{Professional Summary}
  \small{
-  Software Engineer with hands-on experience building scalable MERN stack applications and AI-augmented development workflows. Proven ability to improve system reliability (30\% reduction in production errors) and leverage AI tooling to accelerate delivery and optimize real-time, high-concurrency systems. Strong ownership mindset with a focus on performance, correctness, and maintainability.
+  DevOps Engineer with hands-on experience building CI/CD pipelines, containerized deployments, and cloud infrastructure. Proven ability to improve system reliability and accelerate delivery cycles through automation, DevSecOps practices, and AI-augmented workflows. Strong focus on infrastructure security, performance budgeting, and operational excellence.
  }
 
 %-----------PROGRAMMING SKILLS-----------
@@ -117,7 +117,7 @@
     \small{\item{
      \textbf{Languages}{: JavaScript (ES6+), TypeScript, C++, Python, SQL, HTML/CSS} \\
      \textbf{Frameworks}{: React.js, Next.js 15, Node.js, Express.js, Redux Toolkit} \\
-     \textbf{Tools}{: Git, Docker, AWS (EC2, S3), Jest, Cypress, Redis} \\
+     \textbf{CI/CD \& DevOps}{: GitHub Actions, Docker, Jenkins, AWS (EC2, S3), Vercel, Shell Scripting} \\     \textbf{Security}{: Trivy, Dependabot, npm audit, ESLint} \\
      \textbf{Core CS}{: Data Structures, Algorithms, OOP, REST APIs, System Design} \\
      \textbf{Leadership}{: Code Review, Agile/Scrum, Cross-functional Collaboration, Technical Documentation, Mentoring}
     }}
@@ -128,9 +128,10 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Development Engineer}{Sep 2025 -- Present}
+      {DevOps \& Software Engineer}{Sep 2025 -- Present}
       {NSRY, SVP (Naval Ship Repair Yard)}{Sri Vijaya Puram, India}
       \resumeItemListStart
+        \resumeItem{Automated build and deployment workflows using Jenkins and Docker, reducing manual intervention and ensuring consistent environment parity across development and production systems.}
         \resumeItem{Architected and refactored core MERN modules for industrial resource management, improving backend responsiveness and data retrieval speed.}
         \resumeItem{Reduced production-level system errors by 30\% by implementing a comprehensive automated testing suite using Jest and Cypress for mission-critical logic.}
         \resumeItem{Digitized legacy industrial workflows into scalable full-stack applications, ensuring high data integrity and operational reliability in a high-stakes environment.}
@@ -142,7 +143,6 @@
       \resumeItemListStart
         \resumeItem{Managed full-cycle SDLC for diverse clients, delivering production-ready platforms using Next.js 15, TypeScript, and AWS.}
         \resumeItem{Optimized database schemas and API orchestration, improving Lighthouse performance scores by ~40\% while maintaining backward compatibility for existing users.}
-        \resumeItem{Integrated third-party services including secure payment gateways and LLM-based automation (Gemini 2.0) into existing enterprise systems.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -158,15 +158,16 @@
             \resumeItem{Hardened the project with a production-grade DevSecOps pipeline using GitHub Actions, Docker, Lighthouse CI, and Dependabot — achieving zero high-severity vulnerabilities and enforced Core Web Vitals budgets on every deployment.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Veloce Kanban} $|$ \emph{React, TypeScript, DnD-Kit, Framer Motion, Tailwind CSS}}{$(${\href{https://veloce.yeshwanth.online}{Live App}} $|$ {\href{https://github.com/Yeshwanth-kr/veloce-kanban}{Code}}$)$}
+          {\textbf{LaTeX Resume Pipeline} $|$ \emph{ LaTeX, GitHub Actions, pdfTeX}}{$(${\href{https://github.com/Yeshwanth-kr/latex-resume}{Code}}$)$}
           \resumeItemListStart
-            \resumeItem{Engineered a high-performance Kanban board with fluid drag-and-drop mechanics across dynamic containers using DnD-Kit, with persistent state management and polished layout animations via Framer Motion.}
-            \resumeItem{Designed with full TypeScript type safety and a minimalist Tailwind CSS aesthetic, inspired by Jira, Trello, and Notion UI patterns.}
+            \resumeItem{Engineered an automated document compilation pipeline using GitHub Actions to build and publish versioned PDF resumes from LaTeX source on every commit, eliminating manual build steps.}
+            \resumeItem{Maintained multiple role-specific resume variants under version control, ensuring consistent formatting and reproducible builds across all deployments.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Pathfinding Analysis Engine} $|$ \emph{JavaScript, Canvas API, DSA}}{$(${\href{https://visualize.yeshwanth.online}{Live App}} $|$ {\href{https://github.com/Yeshwanth-kr/pathfinding-visualizer-pwa}{Code}}$)$}
+          {\textbf{Pathfinding Visualizer PWA} $|$ \emph{JavaScript, DSA, Docker, GitHub Actions, Trivy}}{$(${\href{https://visualize.yeshwanth.online}{Live App}} $|$ {\href{https://github.com/Yeshwanth-kr/pathfinding-visualizer-pwa}{Code}}$)$}
           \resumeItemListStart
-            \resumeItem{Architected a PWA to benchmark search heuristics (A*, Dijkstra) on complex grids, optimizing for 60FPS rendering of 2500+ nodes.}
+            \resumeItem{Architected a multi-stage CI/CD pipeline with GitHub Actions featuring automated ESLint linting, Trivy container security scanning, and Vercel production deployments with strict branch protection rules.}
+            \resumeItem{Containerized the application using a multi-stage Docker build on Node 22-Alpine, achieving minimal image footprint, and integrated Lighthouse CI to enforce Core Web Vitals performance budgets on every deployment.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
