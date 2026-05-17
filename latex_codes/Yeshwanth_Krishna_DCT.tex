@@ -1,5 +1,8 @@
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage{microtype}
+\usepackage{ragged2e}
+\justifying
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -18,7 +21,7 @@
     pdftitle={Yeshwanth Krishna - Data Center Technician Resume},
     pdfauthor={Yeshwanth Krishna},
     pdfsubject={Data Center Technician / Infrastructure Engineer},
-    pdfkeywords={Networking, Cisco, Nivetti, Hardware Troubleshooting, Server Maintenance, Rack Deployment, Linux, Operational Excellence, Amazon Leadership Principles, DCT}
+    pdfkeywords={Networking, Cisco, Nivetti, Hardware Troubleshooting, Server Maintenance, Rack Deployment, Linux, Operational Excellence, DCT}
 }
 
 \pagestyle{fancy}
@@ -108,15 +111,16 @@
   Systems and Network Professional with hands-on experience in high-density data environments and mission-critical infrastructure. Proven expertise in configuring enterprise-grade networking equipment (Cisco, Nivetti, Tejas) and managing complex hardware lifecycle tasks. Strong ownership mindset with a focus on operational excellence, hardware reliability, and maintaining 100\% system availability in industrial and naval environments.
  }
 
-%-----------PROGRAMMING SKILLS-----------
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Networking}{: Cisco, Nivetti, Tejas Switches; TCP/IP, VLAN, Routing/Switching, Fiber \& Copper Cabling} \\
-     \textbf{Hardware}{: Server Rack Maintenance, Component Replacement (CPU, RAM, NIC), PSU Diagnostics, Troubleshooting} \\
+     \textbf{Networking}{: Cisco, Nivetti, Tejas Switches; TCP/IP, VLAN, Routing/Switching, IPMI, iDRAC, iLO, KVM over IP} \\
+     \textbf{Hardware}{: Dell PowerEdge, HPE ProLiant, Rack \& Stack, Break-Fix, RMA Processing, Cable Management (Cat6/Fiber), PDU/UPS Management, DCIM Tools} \\
      \textbf{OS \& Tools}{: Linux (Ubuntu, Debian), Shell Scripting, CLI, Docker, Jenkins, Hardware Health Monitoring} \\
-     \textbf{Leadership}{: Ownership, Customer Obsession, Bias for Action, Deliver Results, Operational Excellence} \\
-     \textbf{Infrastructure}{: Power Distribution, Thermal Management, SLA Adherence, Asset Tracking, Security Protocols}
+     \textbf{Infrastructure}{: Power Distribution, Thermal Management, SLA Adherence, Asset Tracking, Security Protocols} \\
+     \textbf{Tools \& Equipment}{: OTDR, Cable Testers, Crimping Tools, Label Makers, Rack Mounting Hardware, Serial Consoles} \\
+     \textbf{Leadership}{: Incident Response, Change Management, Shift Handover Documentation, Vendor Coordination} \\
     }}
  \end{itemize}
 
@@ -129,8 +133,9 @@
       {NSRY, SVP (Naval Ship Repair Yard)}{Sri Vijaya Puram, India}
 \resumeItemListStart
         \resumeItem{Manage high-level network engineering for the Naval Communication Network, specializing in the configuration and deployment of enterprise-grade Cisco, Nivetti, and Tejas switches.}
-        \resumeItem{Perform hardware-level diagnostics and component-level repairs on server-side infrastructure, maintaining 24/7 uptime for critical naval resource management systems.}
+        \resumeItem{Perform break-fix repairs and RMA processing on Dell/HPE server hardware, maintaining 24/7 uptime for critical naval resource management systems.}
         \resumeItem{Execute complex password recovery and firmware update protocols on legacy and modern networking hardware to restore system connectivity and security.}
+        \resumeItem{Perform structured cabling (fiber and copper), hot/cold aisle management, and rack-level power distribution (PDU/UPS) to maintain thermal efficiency and uptime.}
         \resumeItem{Coordinate onsite technical maintenance and rack-level deployments, ensuring strict adherence to safety and operational reliability standards in a high-stakes environment.}
       \resumeItemListEnd
       
@@ -138,31 +143,20 @@
       {Infrastructure and Deployment Consultant}{Jan 2023 -- Present}
       {Independent / Freelance}{Remote}
       \resumeItemListStart
-        \resumeItem{Managed full-cycle deployment and infrastructure scaling for diverse clients, utilizing Docker and Jenkins to automate CI/CD pipelines and reduce manual intervention.}
-        \resumeItem{Optimized server-side resource allocation and database orchestration, improving system responsiveness by 40\% and ensuring high availability for enterprise applications.}
-        \resumeItem{Integrated secure monitoring tools to track hardware health and data integrity across distributed cloud and on-premise nodes.}
+        \resumeItem{Deployed and maintained on-premise server infrastructure for clients, integrating hardware health monitoring tools to track system performance and data integrity across distributed nodes.}
+        \resumeItem{Performed physical server installation, rack mounting, and network configuration for a client hosting environment, ensuring stable connectivity and optimal hardware placement for production workloads.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Distributed Infrastructure Monitor} $|$ \emph{Docker, Jenkins, MongoDB, Shell}}{}
-          \resumeItemListStart
-            \resumeItem{Developed a monitoring engine to benchmark hardware performance and connectivity across distributed nodes, utilizing Jenkins for automated health checks.}
-            \resumeItem{Implemented real-time alert systems for hardware failures and network latency spikes, ensuring rapid incident response and resolution.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Marine Access Management System} $|$ \emph{Node.js, SQL, Security Protocols}}{}
-          \resumeItemListStart
-            \resumeItem{Architected a secure vendor management system for a marine dockyard, focusing on high data integrity and secure physical access control protocols.}
-            \resumeItem{Managed the deployment and server-side configuration to handle high-concurrency requests while maintaining sub-100ms processing speeds.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
+%-----------KEY ACHIEVEMENTS-----------
+\section{Key Achievements}
+    \resumeItemListStart
+    \resumeItem{Led a full-scale network migration across a high-security naval facility, consolidating isolated network segments into a unified infrastructure — playing a key role in endpoint migration and switch configuration.}
+    \resumeItem{Diagnosed and resolved a recurring underwater OFC cable fault in a marine environment using OTDR testing, identifying and restoring connectivity to a naval floating dock each time the fault occurred.}
+    \resumeItem{Recovered a wall-mounted rack collapse during live operations, re-deploying and restoring full connectivity within 15 minutes, maintaining near-zero unplanned downtime.}
+    \resumeItem{Maintained 24/7 network availability across a classified naval facility throughout tenure, with only 1–2 recorded downtime incidents over the entire period.}
+    \resumeItemListEnd
 
 %-----------EDUCATION-----------
 \section{Education}
